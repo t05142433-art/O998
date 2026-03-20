@@ -5,12 +5,12 @@ minor_version=0
 build_version=1
 type=webapp
 webapp_url=https://smart-stream-visions.lovable.app
-ui_resolutions=fhd
+ui_resolutions=fhd,hd
 mm_icon_focus_fhd=pkg:/images/icon_fhd.png
 mm_icon_focus_hd=pkg:/images/icon_hd.png
 mm_icon_focus_sd=pkg:/images/icon_sd.png
 splash_screen_fhd=pkg:/images/splash_fhd.png
 splash_screen_hd=pkg:/images/splash_hd.png
 splash_screen_sd=pkg:/images/splash_sd.png
-# Adicionando permissoes basicas
 requires_external_control=1
+navigation_model=webapp
