@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="MainScene" extends="Scene">
+    <script type="text/brightscript" uri="pkg:/components/MainScene.brs" />
+    <children>
+        <!-- Fundo Preto -->
+        <Rectangle width="1920" height="1080" color="0x000000FF" />
+        
+        <!-- Texto de Carregamento -->
+        <Label 
+            id="loadingLabel"
+            text="Carregando Thayson TV..." 
+            width="1920" 
+            height="1080" 
+            horizAlign="center" 
+            vertAlign="center" 
+            font="font:LargeBoldSystemFont"
+        />
+
+        <!-- O Navegador -->
+        <WebView 
+            id="mainWebView" 
+            width="1920" 
+            height="1080" 
+            visible="false"
+        />
+    </children>
+</component>
