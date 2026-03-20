@@ -5,8 +5,8 @@ sub init()
     m.webView.width = 1280
     m.webView.height = 720
     
-    ' Configura o link
-    m.webView.url = "https://smart-stream-visions.lovable.app/"
+    ' LINK DE TESTE (Google)
+    m.webView.url = "https://www.google.com"
     
     ' Forca visibilidade e foco
     m.webView.visible = true
