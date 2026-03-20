@@ -1,0 +1,5 @@
+{
+  "name": "Roku WebStream App",
+  "description": "Aplicativo WebView para Roku TV transmitindo smart-stream-visions.lovable.app",
+  "requestFramePermissions": []
+}
