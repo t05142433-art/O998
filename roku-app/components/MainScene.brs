@@ -1,14 +1,12 @@
 sub init()
     m.webView = m.top.findNode("mainWebView")
     
-    ' Ajusta o tamanho para a tela real
-    deviceInfo = CreateObject("roDeviceInfo")
-    displaySize = deviceInfo.GetDisplaySize()
-    m.webView.width = displaySize.w
-    m.webView.height = displaySize.h
+    ' Trava o tamanho em HD para compatibilidade
+    m.webView.width = 1280
+    m.webView.height = 720
     
     ' Configura o link
-    m.webView.url = "https://smart-stream-visions.lovable.app"
+    m.webView.url = "https://smart-stream-visions.lovable.app/"
     
     ' Forca visibilidade e foco
     m.webView.visible = true
@@ -16,14 +14,10 @@ sub init()
     
     ' Inicia o carregamento
     m.webView.control = "load"
-    
-    print "--- TENTANDO CARREGAR SITE ---"
-    print "URL: " + m.webView.url
 end sub
 
 function onKeyEvent(key as String, press as Boolean) as Boolean
     if press
-        print "TECLA: " + key
         if key = "back"
             if m.webView.canGoBack
                 m.webView.back = true

@@ -2,14 +2,14 @@
 <component name="MainScene" extends="Scene">
     <script type="text/brightscript" uri="pkg:/components/MainScene.brs" />
     <children>
-        <!-- Fundo Preto -->
-        <Rectangle width="1920" height="1080" color="0x000000FF" />
+        <!-- Fundo Azul Escuro (Se voce vir azul, o app carregou mas o site nao) -->
+        <Rectangle width="1280" height="720" color="0x000044FF" />
         
-        <!-- O Navegador (Agora visivel desde o inicio) -->
+        <!-- O Navegador travado em HD -->
         <WebView 
             id="mainWebView" 
-            width="1920" 
-            height="1080" 
+            width="1280" 
+            height="720" 
             visible="true"
         />
     </children>
