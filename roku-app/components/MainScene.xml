@@ -5,23 +5,12 @@
         <!-- Fundo Preto -->
         <Rectangle width="1920" height="1080" color="0x000000FF" />
         
-        <!-- Texto de Carregamento -->
-        <Label 
-            id="loadingLabel"
-            text="Carregando Thayson TV..." 
-            width="1920" 
-            height="1080" 
-            horizAlign="center" 
-            vertAlign="center" 
-            font="font:LargeBoldSystemFont"
-        />
-
-        <!-- O Navegador -->
+        <!-- O Navegador (Agora visivel desde o inicio) -->
         <WebView 
             id="mainWebView" 
             width="1920" 
             height="1080" 
-            visible="false"
+            visible="true"
         />
     </children>
 </component>
