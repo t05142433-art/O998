@@ -2,11 +2,17 @@
 <component name="MainScene" extends="Scene">
     <script type="text/brightscript" uri="pkg:/components/MainScene.brs" />
     <children>
+        <!-- Fundo preto para nao ficar tela branca/vazia -->
+        <Rectangle 
+            width="1920" 
+            height="1080" 
+            color="0x000000FF" 
+        />
         <WebView 
             id="mainWebView" 
             width="1920" 
             height="1080" 
-            translation="[0,0]" 
+            visible="true"
         />
     </children>
 </component>
